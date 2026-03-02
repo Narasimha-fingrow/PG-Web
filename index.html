@@ -278,23 +278,11 @@
 
   
 
-  .scroll-indicator {
-    position: absolute; bottom: 40px; right: 5%; z-index: 2;
-    display: flex; flex-direction: column; align-items: center; gap: 8px;
-    color: rgba(255,255,255,0.4);
-    font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase;
-    writing-mode: vertical-rl;
-    animation: fadeInRight 1.5s 0.5s both;
-  }
+  
 
   @keyframes fadeInRight { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
 
-  .scroll-indicator::after {
-    content: '';
-    width: 1px; height: 50px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
-    animation: scrollLine 2s infinite;
-  }
+  
 
   @keyframes scrollLine {
     0% { transform: scaleY(0); transform-origin: top; }
@@ -966,7 +954,7 @@
     .gallery-item:nth-child(1) { grid-column: span 2; }
     .footer-grid { grid-template-columns: 1fr; gap: 32px; }
     .footer-bottom { flex-direction: column; text-align: center; }
-    .hero-lines::before, .hero-lines::after, .scroll-indicator { display: none; }
+    .hero-lines::before, .hero-lines::after { display: none; }
     .rooms-grid { grid-template-columns: 1fr; }
     .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
   }
@@ -1042,7 +1030,6 @@
       <a href="#rooms" class="btn-outline">View Rooms</a>
     </div>
   </div>
-  <div class="scroll-indicator">Scroll</div>
 </section>
 
 <!-- FACILITIES -->
@@ -1195,7 +1182,7 @@
       <p class="pricing-desc">Perfect for social residents on a budget</p>
       <div class="pricing-price">
         <span class="price-currency">₹</span>
-        <span class="price-amount">7,999</span>
+        <span class="price-amount">8,500</span>
         <span class="price-period">/month</span>
       </div>
       <ul class="pricing-features">
@@ -1215,7 +1202,7 @@
       <p class="pricing-desc">Ideal balance of comfort and affordability</p>
       <div class="pricing-price">
         <span class="price-currency">₹</span>
-        <span class="price-amount">11,999</span>
+        <span class="price-amount">13,000</span>
         <span class="price-period">/month</span>
       </div>
       <ul class="pricing-features">
@@ -1235,7 +1222,7 @@
       <p class="pricing-desc">Ultimate privacy with all premium privileges</p>
       <div class="pricing-price">
         <span class="price-currency">₹</span>
-        <span class="price-amount">18,999</span>
+        <span class="price-amount">20,000</span>
         <span class="price-period">/month</span>
       </div>
       <ul class="pricing-features">
@@ -1257,7 +1244,7 @@
 <section id="gallery">
   <div class="section-header reveal">
     <div class="section-tag">Visual Tour</div>
-    <h2 class="section-title">Step Inside<br><em>Aurum Living</em></h2>
+    <h2 class="section-title">Step Inside<br><em>Hyd Living</em></h2>
     <p class="section-subtitle">Every corner crafted with care. Take a visual tour of your future home.</p>
   </div>
   <div class="gallery-grid" id="galleryGrid">
@@ -1327,9 +1314,9 @@
             <label for="roomtype">Room Type</label>
             <select id="roomtype" required>
               <option value="" disabled selected>Select room type</option>
-              <option value="single">Single Sharing — ₹18,999/mo</option>
-              <option value="double">Double Sharing — ₹11,999/mo</option>
-              <option value="triple">Triple Sharing — ₹7,999/mo</option>
+              <option value="single">Single Sharing — ₹20,000/mo</option>
+              <option value="double">Double Sharing — ₹13,000/mo</option>
+              <option value="triple">Triple Sharing — ₹8,500/mo</option>
             </select>
           </div>
           <div class="form-group">
